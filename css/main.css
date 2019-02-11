@@ -1,0 +1,131 @@
+html {
+     font-size: calc(.5em + .5vw);
+} 
+#bg {
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+    z-index: -1;
+}
+#bg img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+    z-index: -1;
+}
+#lunchImage {
+    width: 100%;
+    height: auto;
+}
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.logo {
+    width: 25%;
+    height: auto;
+}
+body {
+    background-color: rgb(201, 223, 241);
+    padding-top: 0px;
+}
+#breakfastBody {
+    color: white;
+}
+#dinnerBody {
+    color: white;
+}
+h1 {
+    font-weight: bold;
+    font-size: calc(1.25em + 1.25vw);
+    text-decoration: underline;
+}
+#navBar {
+   /* list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F0F4F3; */
+    width: 100%;
+    vertical-align: center;
+    overflow: auto;
+}
+#navBar a {
+   /* display: inline-block;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none; */
+    float: left;
+    padding: 12px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+#navBar a:link {
+    color:black;
+}
+#navBar a:visited {
+    color:green;
+}
+#navBar a:hover {
+    background: #C9DFF1;
+}
+ul li:first-child {
+    text-decoration: underline;
+}
+.Articles {
+    border: solid 1px black;
+    margin-bottom: 5px;
+}
+#breakfastIMG{
+    width: 33%;
+    height: auto;
+}
+#lunchIMG{
+    width: 33%;
+    height: auto;
+}
+#dinnerIMG{
+    width: 33%;
+    height: auto;
+}
+p::first-letter {
+    font-weight: bold;
+    color: blue;
+}
+
+/*drop down menu*/
+.dropdown {
+    position: relative;
+
+}
+.drop-nav,
+.flyout-nav {
+    position: absolute;
+    display: none;
+}
+.drop-nav li {
+    border-bottom: 1px solid black;
+}
+.dropdown:hover > .drop-nav,
+.flyout:hover > .flyout-nav {
+    display: block;
+    background-color: black;
+    opacity: .9;
+}
+.flyout-nav {
+    left: 100%;
+    top: 0;
+}
